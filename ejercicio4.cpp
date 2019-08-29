@@ -11,9 +11,20 @@ Escribir un programa que imprima lo siguiente:
 */
 
 #include <iostream>
-using std::cout;
+using namespace std;
+int x = 6, y = 7, z = x - 1;
 
 int main() {
+    for (int Y = 2; Y <= y; Y++){
+        for (int X = 0; X != Y; X++){
+            cout << X+1;
+        }
+        for (int Z = 1; Z < x; Z++){
+            cout << "*";
+        }
+        x--;
+        cout << "\n";
+    }
 
 
     return 0;
